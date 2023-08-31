@@ -61,7 +61,10 @@ img[src$=".gif"] {
 
 /* TODO Jest Website flaky elements */
 
-
+/* Those OpenCollective backers avatars are constantly re-ordered */
+.opencollective-avatars {
+  display: none;  
+}
 
 `;
 
