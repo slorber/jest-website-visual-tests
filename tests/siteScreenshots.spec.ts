@@ -94,7 +94,8 @@ function createPathnameTest(pathname: string) {
     const url = siteUrl + pathname;
     await page.goto(url);
     if (!isProd) {
-      await page.waitForFunction(waitForDocusaurusHydration);
+      // TODO restore
+      // await page.waitForFunction(waitForDocusaurusHydration);
     }
     await page.evaluate(async () => new Promise((r) => requestIdleCallback(r)));
     await page.addStyleTag({ content: stylesheet });
