@@ -23,7 +23,7 @@ const BlacklistedPathnames: string[] = [
 function isBlacklisted(pathname: string) {
   return (
     // skip versioned docs
-    pathname.match(/^\/docs\/(\d\.\d\d)|(next)\//) ||
+    pathname.match(/^\/docs\/(\d\d?\.\d\d?)|(next)\//) ||
     // manually excluded urls
     BlacklistedPathnames.includes(pathname)
   );
