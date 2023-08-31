@@ -1,0 +1,23 @@
+{
+  "name": "jest-website-visual-tests",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:slorber/jest-website-visual-tests.git",
+  "author": "sebastienlorber <lorber.sebastien@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "playwright test",
+    "trigger": "git commit -am \"empty\" --allow-empty && git push",
+    "report": "playwright show-report",
+    "postinstall": "patch-package"
+  },
+  "dependencies": {
+    "@argos-ci/cli": "^0.4.6",
+    "@argos-ci/playwright": "^0.0.6",
+    "@playwright/test": "^1.37.1",
+    "cheerio": "^1.0.0-rc.12",
+    "patch-package": "^6.5.1",
+    "postinstall-postinstall": "^2.1.0",
+    "prettier": "^2.8.3"
+  }
+}
